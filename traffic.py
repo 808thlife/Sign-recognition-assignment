@@ -109,10 +109,9 @@ def get_model():
 
     model.add(keras.layers.Flatten())
 
-    # Output layer with 43 units each representing the possiblity of a particular road sign
+    # Output layer with 43 units, each representing the possiblity of a particular road sign
     model.add(keras.layers.Dense(NUM_CATEGORIES, activation="softmax"))
 
-    # Look up how to choose loss function and what kinda loss functions are there.
     model.compile(
         loss=keras.losses.categorical_crossentropy,
         metrics=[
