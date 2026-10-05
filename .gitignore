@@ -12,3 +12,5 @@ wheels/
 
 #exported models 
 .h5
+
+.DS_Store
